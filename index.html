@@ -11,26 +11,21 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div
-      style="
-        max-width: 80%;
-        width: 100%;
-        margin: 50px auto;
-        border: solid 1px black;
-      "
-    >
+    <div class="page-wrapper">
+        <header class="site-header">
+            <nav class="nav-menu">
+                <a href="./index.html" class="nav-btn main-page">Главная</a>
+                <a href="./about.html" class="nav-btn about-page">О нас</a>
+                <a href="/catalog.html" class="nav-btn catalog-page">Каталог</a>
+                <a href="/contacts.html" class="nav-btn contacts-page">Контакты</a>
+                <a href="#" class="btn btn-login">Вход</a>
+                <a href="#" class="btn btn-register">Регистрация</a>
+            </nav>
+        </header>
       <main>
         <section class="hero">
-          <div class="nav-menu">
-            <a href="#" class="nav-btn main-page active">Главная</a>
-            <a href="#" class="nav-btn about-page">О нас</a>
-            <a href="#" class="nav-btn catalog-page">Каталог</a>
-            <a href="#" class="nav-btn contacts-page">Контакты</a>
-            <a href="#" class="btn btn-login">Вход</a>
-            <a href="#" class="btn btn-register">Регистрация</a>
-          </div>
           <div class="hero-content">
-            <h1>Создайте комфорт в своём доме</h1>
+            <h1>Превратите свой дом в оазис уюта</h1>
           </div>
         </section>
         <section class="about">
@@ -41,7 +36,7 @@
           <div class="product-cards">
             <div class="product-card">
               <img
-                      src="photo/стул4.png"
+                      src="/photo/стул4.png"
                       alt="Кресло-облако «Белый Вельвет»"
               />
               <h3>Кресло-облако «Белый Вельвет»</h3>
@@ -49,19 +44,20 @@
             </div>
             <div class="product-card">
               <img
-                      src="photo/unsplash_kvmdsTrGOBM.png"
+                      src="/photo/unsplash_kvmdsTrGOBM.png"
                       alt="Светло-коричневый стул"
+                      loading="lazy"
               />
               <h3>Светло-коричневый стул с деревянными ножками</h3>
               <p class="price">9 500 ₽</p>
             </div>
             <div class="product-card">
-              <img src="photo/unsplash_3neSwyntbQ8.png" alt="Черный стул" />
+              <img src="/photo/unsplash_3neSwyntbQ8.png" alt="Черный стул" loading="lazy"/>
               <h3>Чёрный стул на высоких ножках</h3>
               <p class="price">47 500 ₽</p>
             </div>
             <div class="product-card">
-              <img src="photo/unsplash_1P6AnKDw6S8.png" alt="Белый стул" />
+              <img src="/photo/unsplash_1P6AnKDw6S8.png" alt="Белый стул" loading="lazy"/>
               <h3>Белый стул с изогнутыми ножками</h3>
               <p class="price">95 000 ₽</p>
             </div>
@@ -130,3 +126,4 @@
     </div>
   </body>
 </html>
+
