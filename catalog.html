@@ -26,15 +26,12 @@
             </div>
         </section>
 
-        <!-- FILTER + GRID -->
         <section class="catalog container">
-            <!-- sidebar -->
             <button class="filter-toggle" id="filterToggle">
                 Фильтр
                 <svg width="20" height="20" viewBox="0 0 24 24"><path d="M3 5h18M6 12h12M10 19h4" stroke="currentColor" stroke-width="2" fill="none"/></svg>
             </button>
 
-            <!-- modal overlay -->
             <div id="filterModal" class="modal" aria-hidden="true">
                 <div class="modal__backdrop"></div>
 
@@ -44,7 +41,6 @@
 
                     <h2 id="filterTitle" class="filter-head">Фильтры</h2>
 
-                    <!-- Категории -->
                     <label class="filter-label" for="catSelect">Категория</label>
                     <select id="catSelect" class="select">
                         <option value="">Все</option>
@@ -53,21 +49,18 @@
                         <option value="tables">Столы</option>
                     </select>
 
-                    <!-- Цена -->
                     <label class="filter-label" for="priceRange">Цена до, ₽</label>
                     <input type="range" id="priceRange" min="1000" max="150000" step="1000" value="150000">
                     <div class="filter-range">
                         <span id="priceMin">0</span> – <span id="priceMax">150 000</span>
                     </div>
 
-                    <!-- Чекбоксы -->
                     <label class="checkbox"><input type="checkbox" id="inStockChk"> <span>В наличии</span></label>
                     <label class="checkbox"><input type="checkbox" id="discountChk"> <span>Скидки</span></label>
 
                     <button id="applyBtn" type="button" class="btn btn--primary">Применить</button>
                 </aside>
             </div>
-
 
             <div id="productsGrid" class="catalog-grid" aria-live="polite"></div>
         </section>
