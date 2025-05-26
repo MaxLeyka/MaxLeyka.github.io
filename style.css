@@ -1,0 +1,775 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+:root{
+    --main-bg-color: #e8d2d6;
+    --main-bg-color1: #DCBEC9;
+    --section-bg-color: white;
+    --section-bg-color1: #F1DDDE;
+    --btn-bg-color:#A8E6CF;
+    --main-text-color:#333333;
+    --special-bg-color:#FFAB91;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--main-bg-color);
+    width: 100vw;
+    min-height: 100vh;
+    padding: 40px 0;
+}
+.content{
+    background-color: var(--section-bg-color);
+    width: 70%;
+    height: 100%;
+    padding: 10px 0;
+}
+.navbar {
+    background-color: var(--section-bg-color);
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 850px;
+    width: 100%;
+    margin: 0 auto 10px;
+}
+.navbar a {
+    color: var(--main-text-color);
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    margin-right: 20px;
+    transition: color 0.3s, border-bottom 0.3s;
+    padding-bottom: 2px;
+}
+.navbar__links a:hover,
+.navbar__links a:focus {
+    color: var(--special-bg-color);
+    border-bottom: 2px solid var(--btn-bg-color);
+
+}
+.navbar__links a.active {
+    color: var(--special-bg-color);
+    border-bottom: 2px solid var(--btn-bg-color);
+}
+.logo{
+    max-height: 45px;
+    max-width: 45px;
+}
+.navbar__cart{
+    height: 20px;
+    width: 20px;
+}
+.hero{
+    position: relative;
+    background-image: url("./assets/heroCake.jpeg");
+    background-size: cover;
+    background-position: center;
+    width: 90%;
+    min-height: 350px;
+    margin: 0 auto;
+    border-radius: 50px;
+}
+.hero__text {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    color: var(--main-text-color);
+    font-size: 10px;
+}
+.hero__text h3 {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+.hero__text p {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 10px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.hero__text a {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 10px;
+    color: var(--main-text-color);
+    margin-right: 1rem;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+.hero__text a.order {
+    display: inline-block;
+    background-color: var(--special-bg-color);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.hero__text a:hover {
+    color: #E06B6B;
+}
+.cards {
+    margin: 20px auto;
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 10px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 150px;
+    background-color: var(--section-bg-color);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.card__icon {
+    background-color: var(--main-bg-color);
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background-size: cover;
+    overflow: visible;
+    margin-bottom: 10px;
+    padding: 12px 12px 14px;
+}
+.card__icon.note{
+    padding: 14px 11px 12px 16px;
+}
+.card__icon.trophy{
+    padding: 13px 13px;
+}
+
+.card__icon img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.card__title {
+    color: var(--main-text-color);
+    font-size: 14px;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: bold;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.card__desc {
+    color: var(--main-text-color);
+    font-size: 12px;
+    font-family: "Sofia Sans", sans-serif;
+    line-height: 1.4;
+    text-align: center;
+}
+.popular-cakes-list {
+    width: 90%;
+    margin: 40px auto;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--section-bg-color1);
+    border-radius: 10px;
+}
+
+.cakes-section-title {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--main-text-color);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.cakes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.cakes-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 150px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.cakes-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.cakes-card > div:first-child {
+    width: 100%;
+    height: 80px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+
+.cakes-card img {
+    width: 100%;
+    max-height: 80px;
+    object-fit: cover;
+}
+.cakes-card button img {
+    width: 12px;
+    height: 12px;
+    object-fit: contain;
+    vertical-align: middle;
+}
+
+.cakes-card > div:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.cakes-title {
+    font-size: 14px;
+    display: block;
+    color: var(--main-text-color);
+    height: 30px;
+    font-family: "Sofia Sans", sans-serif;
+}
+
+.cakes-card button {
+    background-color: var(--special-bg-color);
+    color: #ffffff;
+    border: none;
+    padding: 2px 4px;
+    border-radius: 5px;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
+
+.cakes-card button:hover {
+    background-color: #fa7f7f;
+}
+
+.cakes-card p {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 8px;
+    color: var(--main-text-color);
+    margin: 0;
+}
+.cakes-price{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    font-size: 10px;
+}
+.cake-order{
+    margin-top: 10px;
+    display: inline-block;
+    background-color: var(--special-bg-color);
+    color: #ffffff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.cake-order:hover{
+    color: #E06B6B;
+}
+.about-us-mini {
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 90%;
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.about-us-mini:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.about-us-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.about-us-img {
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.about-us-text h2 {
+    font-family: "Sofia Sans", sans-serif;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.about-us-text p {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 12px;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+
+.about-link {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    color: var(--main-text-color);
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.about-link:hover {
+    color: var(--special-bg-color);
+}
+.footer {
+    background-color: var(--section-bg-color);
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 12px;
+    color: var(--main-text-color);
+    margin-bottom: 10px;
+}
+
+.footer-nav a {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 12px;
+    color: var(--main-text-color);
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: var(--special-bg-color);
+}
+.footer-social {
+    margin-top: 15px;
+}
+
+.footer-social a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.footer-social a:hover {
+    transform: scale(1.1);
+}
+
+.footer-social img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+.catalog {
+    width: 90%;
+    margin: 20px auto;
+}
+.catalog-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.catalog-header h2 {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 20px;
+    color: var(--main-text-color);
+    text-transform: uppercase;
+}
+.filters {
+    text-align: right;
+    margin-bottom: 10px;
+}
+.filters select {
+    font-family: "Sofia Sans", sans-serif;
+    padding: 5px 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: #fff;
+}
+.catalog-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 15px;
+}
+
+.product-card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+.product-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+.product-card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+.product-title {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--main-text-color);
+    margin: 8px 10px 4px;
+}
+.product-desc {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 10px;
+    color: var(--main-text-color);
+    margin: 0 10px 8px;
+    flex-grow: 1;
+}
+.product-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 10px;
+}
+.product-price {
+    font-family: "Sofia Sans", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+.product-add {
+    background-color: var(--special-bg-color);
+    border: none;
+    padding: 4px 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.product-add:hover {
+    background-color: #fa7f7f;
+}
+.product-add img {
+    width: 14px;
+    height: 14px;
+}
+@media (max-width: 600px) {
+    .product-card img {
+        height: 100px;
+    }
+}
+
+.about-page {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Sofia Sans", sans-serif;
+    color: var(--main-text-color);
+}
+
+.about-hero {
+    position: relative;
+    background-image: url("./assets/AboutHero.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 30px;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 15px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.about-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    background: rgba(0, 0, 0, 0.25);
+    z-index: 0;
+}
+.about-hero__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    position: relative;
+    z-index: 1;
+}
+.about-hero__subtitle {
+    font-size: 14px;
+    max-width: 600px;
+    position: relative;
+    z-index: 1;
+}
+
+.about-intro,
+.about-values {
+    background-color: var(--section-bg-color1);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.about-intro h2,
+.about-values h2 {
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.values-list {
+    list-style: none;
+    padding-left: 0;
+}
+.values-list li {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.about-team h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+.team-card {
+    background-color: var(--section-bg-color);
+    border-radius: 15px;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.team-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 8px;
+}
+.team-card h3 {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.team-card p {
+    font-size: 12px;
+}
+
+.about-cta {
+    background-color: var(--special-bg-color);
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+    border-radius: 20px;
+    margin: 35px 0 20px;
+}
+.about-cta h2 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+.cta-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: var(--main-text-color);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: background-color 0.3s, color 0.3s;
+}
+.cta-btn:hover {
+    background-color: #f8f8f8;
+    color: var(--special-bg-color);
+}
+
+@media (max-width: 600px) {
+    .about-hero__title { font-size: 22px; }
+    .about-hero__subtitle { font-size: 12px; }
+    .about-intro h2,
+    .about-values h2,
+    .about-team h2,
+    .about-cta h2 { font-size: 18px; }
+}
+
+.contact-page {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Sofia Sans", sans-serif;
+    color: var(--main-text-color);
+    padding: 20px 0;
+}
+.contact-hero {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.contact-hero__title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.contact-hero__subtitle {
+    font-size: 14px;
+}
+.contact-info {
+    margin-bottom: 30px;
+}
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+.info-card {
+    background-color: var(--section-bg-color);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.info-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.info-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+.info-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+.info-card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+.contact-form {
+    background-color: var(--main-bg-color);
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+.contact-form h2 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+.contact-form form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    gap: 15px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+.form-group label {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    font-family: "Sofia Sans", sans-serif;
+}
+.contact-btn {
+    background-color: var(--special-bg-color);
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    justify-self: center;
+    width: 150px;
+}
+.contact-btn:hover {
+    background-color: #fa7f7f;
+}
+@media (max-width: 600px) {
+    .contact-hero__title { font-size: 24px; }
+    .info-card img { width: 30px; height: 30px; }
+    .contact-btn { width: 100%; }
+}
+

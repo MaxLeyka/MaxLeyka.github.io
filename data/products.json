@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Красный бархат",
+    "price": 900,
+    "img": "https://source.unsplash.com/600x400/?cake,red-velvet",
+    "desc": "Какао, сметана, крем‑чиз"
+  },
+  {
+    "id": 2,
+    "title": "Фисташковый",
+    "price": 990,
+    "img": "https://source.unsplash.com/600x400/?cake,pistachio",
+    "desc": "Фисташковый бисквит, крем‑пралине"
+  },
+  {
+    "id": 3,
+    "title": "Шоколадное искушение",
+    "price": 850,
+    "img": "https://source.unsplash.com/600x400/?chocolate,cake",
+    "desc": "Тёмный шоколад, клубника"
+  },
+  {
+    "id": 4,
+    "title": "Наполеон",
+    "price": 950,
+    "img": "https://source.unsplash.com/600x400/?napoleon,cake",
+    "desc": "Слоёные коржи, заварной крем"
+  },
+  {
+    "id": 5,
+    "title": "Медовик",
+    "price": 920,
+    "img": "https://source.unsplash.com/600x400/?honey,cake",
+    "desc": "Мёд, сметанный крем"
+  },
+  {
+    "id": 6,
+    "title": "Три шоколада",
+    "price": 1100,
+    "img": "https://source.unsplash.com/600x400/?triple,chocolate,cake",
+    "desc": "Мусс из тёмного, молочного и белого шоколада"
+  },
+  {
+    "id": 7,
+    "title": "Манговый мусс",
+    "price": 1150,
+    "img": "https://source.unsplash.com/600x400/?mango,cake",
+    "desc": "Пюре манго, кокосовый бисквит"
+  },
+  {
+    "id": 8,
+    "title": "Карамельный бисквит",
+    "price": 980,
+    "img": "https://source.unsplash.com/600x400/?caramel,cake",
+    "desc": "Соленая карамель, ореховый кранч"
+  },
+  {
+    "id": 9,
+    "title": "Ванильная клубника",
+    "price": 890,
+    "img": "https://source.unsplash.com/600x400/?strawberry,cake",
+    "desc": "Ванильный бисквит, свежая клубника"
+  },
+  {
+    "id": 10,
+    "title": "Лимонный чизкейк",
+    "price": 950,
+    "img": "https://source.unsplash.com/600x400/?lemon,cheesecake",
+    "desc": "Чизкейк, курд лимон-базилик"
+  },
+  {
+    "id": 11,
+    "title": "Черничный чизкейк",
+    "price": 980,
+    "img": "https://source.unsplash.com/600x400/?blueberry,cheesecake",
+    "desc": "Чизкейк, черничный конфитюр"
+  },
+  {
+    "id": 12,
+    "title": "Прага",
+    "price": 1050,
+    "img": "https://source.unsplash.com/600x400/?prague,chocolate,cake",
+    "desc": "Шоколадный бисквит, сметанный крем"
+  },
+  {
+    "id": 13,
+    "title": "Морковный",
+    "price": 870,
+    "img": "https://source.unsplash.com/600x400/?carrot,cake",
+    "desc": "Морковь, грецкий орех, крем‑чиз"
+  },
+  {
+    "id": 14,
+    "title": "Тирамису",
+    "price": 990,
+    "img": "https://source.unsplash.com/600x400/?tiramisu",
+    "desc": "Савоярди, маскарпоне, кофе"
+  },
+  {
+    "id": 15,
+    "title": "Чёрный лес",
+    "price": 1080,
+    "img": "https://source.unsplash.com/600x400/?black-forest,cake",
+    "desc": "Вишня, шоколадный бисквит, сливки"
+  },
+  {
+    "id": 16,
+    "title": "Чизкейк Нью‑Йорк",
+    "price": 950,
+    "img": "https://source.unsplash.com/600x400/?new-york,cheesecake",
+    "desc": "Классический чизкейк, соус из лесных ягод"
+  },
+  {
+    "id": 17,
+    "title": "Малиновый мусс",
+    "price": 1040,
+    "img": "https://source.unsplash.com/600x400/?raspberry,cake",
+    "desc": "Мусс из малины, бисквит джоконда"
+  },
+  {
+    "id": 18,
+    "title": "Кокосовый рафаэлло",
+    "price": 1120,
+    "img": "https://source.unsplash.com/600x400/?coconut,cake",
+    "desc": "Кокос, миндаль, сливочный крем"
+  },
+  {
+    "id": 19,
+    "title": "Матча чизкейк",
+    "price": 1090,
+    "img": "https://source.unsplash.com/600x400/?matcha,cheesecake",
+    "desc": "Матча, белый шоколад, сыр креметте"
+  },
+  {
+    "id": 20,
+    "title": "Безглютеновый апельсин",
+    "price": 980,
+    "img": "https://source.unsplash.com/600x400/?orange,cake,gluten-free",
+    "desc": "Миндальная мука, апельсиновый курд"
+  }
+]

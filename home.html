@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="hero">
+        <div class="hero__text">
+            <h3 class="hero__title">Премиальные торты для истинных гурманов</h3>
+            <p>Откройте для себя уникальный вкус наших авторских тортов, созданных с любовью и вниманием к каждой детали.
+                Насладитесь неповторимой атмосферой сладкого уюта в каждом кусочке.</p>
+            <div>
+                <a class="order" href="#" onclick="loadPage('catalog.html'); return false;">Заказать сейчас</a>
+                <a href="#" onclick="loadPage('about.html'); return false;">Подробнее о нас</a>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="cards">
+        <div class="card">
+            <div class="card__icon cake"><img src="assets/cake.svg" alt="Иконка торта с апельсином"></div>
+            <h4 class="card__title">Сезонное меню</h4>
+            <p class="card__desc">«Новые сезонные вкусы, вдохновленные свежими фруктами.»</p>
+        </div>
+        <div class="card">
+            <div class="card__icon note"><img src="assets/notebook.svg" alt="Иконка блокнота с ручкой"></div>
+            <h4 class="card__title">Индивидуальные заказы</h4>
+            <p class="card__desc">«Индивидуальные торты по вашему заказу с неповторимым вкусом»</p>
+        </div>
+        <div class="card">
+            <div class="card__icon trophy"><img src="assets/trophy-svgrepo-com.svg" alt="Иконка кубка"></div>
+            <h4 class="card__title">Награды</h4>
+            <p class="card__desc">«Наши торты – отмеченные наградами шедевры.»</p>
+        </div>
+    </div>
+    </section>
+    <section class="popular-cakes-list">
+        <h2 class="cakes-section-title">Популярные торты</h2>
+        <div class="cakes-container">
+            <div class="cakes-card">
+                <span class="cakes-title">Красный бархат</span>
+                <div><img src="assets/red-barhat.png" alt="Торт с красным красителем"></div>
+                <div class="cakes-price">
+                    <span>900 руб/кг</span>
+                    <button><img src="assets/cart2.svg" alt="Добавить в корзину"></button>
+                </div>
+                <p>Какао,сметана,крем-чиз.</p>
+            </div>
+            <div class="cakes-card">
+                <span class="cakes-title">Фисташковый</span>
+                <div><img src="assets/fistashka-tort.jpg" alt="Торт с фисташками"></div>
+                <div class="cakes-price">
+                    <span>990 руб/кг</span>
+                    <button><img src="assets/cart2.svg" alt="Добавить в корзину"></button>
+                </div>
+                <p>Фисташка, бисквит, крем.</p>
+            </div>
+            <div class="cakes-card">
+                <span class="cakes-title">Шоколадное искушение</span>
+                <div><img src="assets/chocolate_cake.jpg" alt="Шоколадный торт с клубникой"></div>
+                <div class="cakes-price">
+                    <span>850 руб/кг</span>
+                    <button><img src="assets/cart2.svg" alt="Добавить в корзину"></button>
+                </div>
+                <p>Шоколад, бисквит, клубника.</p>
+            </div>
+            <div class="cakes-card">
+                <span class="cakes-title">Наполеон</span>
+                <div><img src="assets/tort-napoleon.jpg" alt="Торт Наполеон"></div>
+                <div class="cakes-price">
+                    <span>950 руб/кг</span>
+                    <button><img src="assets/cart2.svg" alt="Добавить в корзину"></button>
+                </div>
+                <p>Слоеное тесто, заварной крем.</p>
+            </div>
+            <div class="cakes-card">
+                <span class="cakes-title">Медовик</span>
+                <div><img src="assets/cake_medovik.jpg" alt="Медовик"></div>
+                <div class="cakes-price">
+                    <span>920 руб/кг</span>
+                    <button><img src="assets/cart2.svg" alt="Добавить в корзину"></button>
+                </div>
+                <p>Мёд, коржи, крем.</p>
+            </div>
+        </div>
+        <a class="cake-order" href="#" onclick="loadPage('catalog.html'); return false;">Каталог товаров</a>
+    </section>
+    <section class="about-us-mini">
+        <div class="about-us-content">
+            <img src="assets/team.jpg" alt="О нас" class="about-us-img" loading="lazy">
+            <div class="about-us-text">
+                <h2>О нас</h2>
+                <p>
+                    Мы уже более 10 лет радуем клиентов качественными тортами.
+                    Создавая уникальные десерты из свежих ингредиентов и традиционных рецептов,
+                    мы стремимся к совершенству в каждой детали.
+                </p>
+                <a class="about-link" href="#" onclick="loadPage('about.html'); return false;">Узнать больше о нас</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
