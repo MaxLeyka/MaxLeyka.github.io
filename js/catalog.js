@@ -1,6 +1,6 @@
 async function initCatalog () {
     try {
-        const items = await fetch('data/products.json').then(r => r.json());
+        const items = await fetch('../data/products.json').then(r => r.json());
         renderCatalog(items);
 
         document
